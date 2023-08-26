@@ -1,6 +1,6 @@
-host = "177.153.51.45"
+host = "local"
 user = "root"
-passwd = "Dh86772951$"
+passwd = "1234"
 
 #comando_a_executar = "kill $(ps aux | grep \"java -jar crypto.scheduled-0.0.1-SNAPSHOT.jar\" | grep -v grep | awk '{print $2}')"
 #comando_a_executar = "nohup java -jar crypto.scheduled-0.0.1-SNAPSHOT.jar &"
