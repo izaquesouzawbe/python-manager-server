@@ -1,0 +1,12 @@
+# Exemplo de dados para inserção
+    '''servidores = [
+        ('contabo-2', '89.117.53.6', 'root', "Dh86772951$")
+    ]
+
+    for nome, host, usuario, senha in servidores:
+        cursor.execute('INSERT INTO servidores (nome, host, usuario, senha) VALUES (?, ?, ?, ?)', (nome, host, usuario, senha))
+
+    conn.commit()
+    conn.close()
+
+    'cd C:/Dev/monitence/monitence_crypto_scheduled/target & del crypto-scheduled.jar & ren crypto.scheduled-0.0.1-SNAPSHOT.jar crypto-scheduled.jar'

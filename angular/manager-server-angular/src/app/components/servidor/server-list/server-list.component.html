@@ -1,0 +1,28 @@
+<div class="mb-3">
+  <button class="btn btn-success me-3" routerLink="/server-form">Add</button>
+  <button class="btn btn-secondary"  (click)="showUse()">Refresh use</button>
+</div>
+
+<h1 class="mb-3">List Servers</h1>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Host</th>
+    <th scope="col">Use</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let server of servers">
+    <td>{{ server.name }}</td>
+    <td>{{ server.host }}</td>
+    <td>{{ server.use }}</td>
+    <td>
+      <button class="btn btn-primary me-3" (click)="edit(server)">Edit</button>
+      <button class="btn btn-danger" (click)="delete(server)">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

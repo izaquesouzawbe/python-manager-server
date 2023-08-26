@@ -1,0 +1,24 @@
+<div class="add-server-form">
+  <h1>Adicionar Banco de Dados</h1>
+  <form (submit)="adicionar()">
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" name="descricao" [(ngModel)]="banco.descricao" required>
+    <br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" [(ngModel)]="banco.nome" required>
+    <br>
+    <label for="host">Host:</label>
+    <input type="text" id="host" name="host" [(ngModel)]="banco.host" required>
+    <br>
+    <label for="porta">Porta:</label>
+    <input type="text" id="porta" name="porta" [(ngModel)]="banco.porta" required>
+    <br>
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" [(ngModel)]="banco.usuario" required>
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" [(ngModel)]="banco.senha" required>
+    <br>
+    <button type="submit">Salvar</button>
+  </form>
+</div>
