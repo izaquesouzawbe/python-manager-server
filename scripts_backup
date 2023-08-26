@@ -1,6 +1,6 @@
 # Exemplo de dados para inserção
     '''servidores = [
-        ('contabo-2', '89.117.53.6', 'root', "Dh86772951$")
+        ('contabo-2', 'local', 'root', "1234")
     ]
 
     for nome, host, usuario, senha in servidores:
